@@ -1,0 +1,57 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* רקע כהה */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.advanced-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.simple-filter {
+  display: flex;
+  align-items: center;
+  background-color: #eaf1fb; /* צבע רקע כפי בתמונה */
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.simple-filter input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.simple-filter .search-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.simple-filter .toggle-advanced-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

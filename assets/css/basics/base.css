@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  transition: 600ms;
+}
+
+html,
+body {
+  font-family: Roboto, Google-Sans;
+  height: 100%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+body {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  text-wrap: balance;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  margin: 0 0 1em;
+  text-wrap: pretty;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Simple and useful CSS Debugging Technique */
+.debug * {
+  outline: 1px solid gold;
+}

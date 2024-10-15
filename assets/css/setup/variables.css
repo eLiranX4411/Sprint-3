@@ -1,0 +1,24 @@
+:root {
+  /* App Sus */
+  --app-primary1: #fcdc94;
+  --app-primary2: #f1f1f1;
+
+  /* Mail App */
+  --mail-primary1: #ffffff;
+  --mail-primary2: #f6f8fc;
+  --mail-primary3: #c2e7ff;
+  --mail-primary4: #d3e3fd;
+  --mail-primary5: #188038;
+  --mail-primary6: #e37400;
+  --mail-primary7: #f3c74b;
+
+  /* Note App */
+  --note-primary1: #fff;
+  --note-primary2: #f1f3f4;
+  --note-primary3: #202124;
+  --note-primary4: #5f6368;
+  --note-primary5: #e8eaed;
+  --note-primary6: #4285f4;
+  --note-primary7: #fbbc04;
+  --note-primary8: #34a853;
+}

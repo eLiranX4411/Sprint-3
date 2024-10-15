@@ -1,0 +1,61 @@
+.book-list {
+  background-color: var(--gray1);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray2);
+  border-radius: 8px;
+  background-color: var(--clr1bg-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 250px;
+  text-align: center;
+}
+
+.book-item img {
+  height: 100px;
+  width: 60px;
+}
+
+.book-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--gray3);
+}
+
+.book-item-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.book-item-actions button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--clr2);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.book-item-actions button:hover {
+  background-color: var(--clr2bg);
+  color: var(--clr2bg-light);
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+}

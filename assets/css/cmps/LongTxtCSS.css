@@ -1,0 +1,16 @@
+.long-txt-css{
+
+ white-space: nowrap; 
+  width: var(--length); 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+
+  &:hover {
+    white-space: normal;
+    width: auto;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+}
+

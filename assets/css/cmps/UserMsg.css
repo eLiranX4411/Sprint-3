@@ -1,0 +1,31 @@
+.user-msg {
+  position: fixed;
+  border: 3px solid var(--note-primary3);
+  border-radius: 1rem;
+
+  font-weight: bold;
+  font-size: 1rem;
+
+  width: 15%;
+  height: 15%;
+  padding: 0.5em 1em;
+}
+
+.user-msg h2 {
+  color: var(--note-primary3);
+}
+
+.user-msg button {
+  float: right;
+  margin: 1em;
+  background-color: none;
+  border: 1px solid var(--note-primary2);
+  border-radius: 1rem;
+
+  transition: ease-in 0.2s;
+}
+
+.user-msg button:hover {
+  background-color: var(--note-primary7);
+  padding-inline: 0.5rem;
+}

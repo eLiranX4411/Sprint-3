@@ -1,0 +1,157 @@
+/* General Styles */
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-family: 'Google Sans', sans-serif;
+}
+
+/* Note Preview (each note card) */
+.notes-preview {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  background-color: var(--note-primary1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  text-wrap: pretty;
+
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 180px;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.notes-preview:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Image and video notes (centered inside the card) */
+.note-img-card,
+.note-video-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  align-items: center;
+}
+
+/* Actions (icon buttons) */
+.notes-actions {
+  position: absolute;
+  display: flex;
+  bottom: 8px;
+  left: -3px;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0;
+}
+
+.notes-preview:hover .notes-actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  transition: opacity 0.3s ease-in;
+}
+
+.notes-actions svg {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+  transition: ease-in 0.2s;
+}
+
+.notes-actions button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.notes-actions svg:hover {
+  fill: #000;
+  transform: translateY(-3px);
+}
+
+.note-txt-container {
+  padding: 1rem;
+}
+
+/* Todos  */
+
+.note-todos-container {
+  background-color: var(--note-primary1);
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Todo Card Title */
+.note-todos-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.todo-txt {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+li.todo-txt input[type='checkbox'] {
+  margin-right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+li.todo-txt input[type='checkbox']:checked + span {
+  text-decoration: line-through;
+  color: var(--note-primary2);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--note-primary4);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: solid rgba(0, 0, 0, 0.053);
+}
+
+/* Hover Effect */
+.notes-preview:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Elevates the note on hover */
+}
+
+.notes-actions:hover {
+  opacity: 1;
+}

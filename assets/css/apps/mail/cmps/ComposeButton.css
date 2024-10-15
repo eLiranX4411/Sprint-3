@@ -1,0 +1,23 @@
+.compose-btn {
+  display: flex;
+  background-color: #d0e8fd;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.compose-btn:hover {
+  background-color: #a0d4fa;
+}
+
+.compose-btn:active {
+  background-color: #78c1f7;
+}

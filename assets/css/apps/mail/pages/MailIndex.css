@@ -1,0 +1,16 @@
+/* mail index  */
+
+@import '../cmps/mail-preview.css';
+@import '../cmps/MailFolderList.css';
+@import '../cmps/MailFilter.css';
+@import '../cmps/Model.css';
+@import '../cmps/ComposeButton.css';
+@import '../cmps/MailCompose.css';
+
+.mail-index-container .section-a {
+  display: flex;
+}
+
+.mail-index-container .section-b {
+  display: flex;
+}

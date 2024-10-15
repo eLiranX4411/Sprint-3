@@ -1,0 +1,78 @@
+.compose-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.compose-box {
+  width: 400px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.compose-header {
+  background-color: #f0f8ff; /* תכלת בהיר */
+  color: #041e49;
+  font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compose-close-btn {
+  background: none;
+  border: none;
+  color: #041e49;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.compose-close-btn:hover {
+  color: #d32f2f; /* שינוי צבע ב-hover ל-X */
+}
+
+.compose-content {
+  padding: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+input,
+textarea {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.compose-footer {
+  padding: 10px;
+  text-align: right;
+}
+
+.compose-btn-send {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.compose-btn-send:hover {
+  background-color: #155ab8; /* שינוי צבע ב-hover */
+}

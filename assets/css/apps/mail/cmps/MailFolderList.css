@@ -1,0 +1,61 @@
+.mail-folder-list {
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  transition: 0.3s ease;
+}
+.mail-folder-list:hover {
+  transition: 0.3s ease;
+  width: 35ch;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 0px solid #ccc;
+  background-color: white;
+  font-family: 'Google Sans', Roboto, sans-serif;
+  font-size: 14px;
+  color: #202124;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 3px;
+  height: 40px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.filter-button.active {
+  font-weight: bold;
+  background-color: #e8f0fe;
+}
+
+.filter-button:hover {
+  background-color: #f5f5f5;
+}
+
+.filter-icon {
+  text-align: center;
+}
+
+.filter-label {
+  text-align: left;
+}
+
+.filter-count {
+  text-align: right;
+  font-weight: bold;
+  color: #5f6368;
+  font-size: 12px;
+  font-family: 'Google Sans', Roboto, sans-serif;
+}

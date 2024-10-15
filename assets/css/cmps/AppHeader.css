@@ -1,0 +1,97 @@
+/* Header Styles */
+header {
+  background-color: #f8f9fa; /* Light gray background */
+  border-bottom: 2px solid #e0e0e0; /* Slightly darker gray for separation */
+  position: relative;
+  z-index: 200;
+  padding: 15px 20px;
+  display: flex; /* Flexbox layout for header */
+  justify-content: space-between; /* Space between title and nav */
+  align-items: center; /* Center items vertically */
+}
+
+.app-title {
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #343a40; /* Dark gray for text */
+}
+
+/* Desktop Navigation */
+.nav-desktop {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.nav-desktop a {
+  text-decoration: none;
+  color: #343a40; /* Dark gray for links */
+  font-weight: 500;
+}
+
+.nav-desktop a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px; /* Width of hamburger lines */
+  height: 3px; /* Height of hamburger lines */
+  background-color: #343a40; /* Dark gray for lines */
+  margin: 3px 0; /* Space between lines */
+  transition: background-color 0.3s ease; /* Smooth transition for line color */
+}
+
+/* Mobile Navigation Styles */
+.nav-mobile {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  background-color: white; /* White background for mobile menu */
+  position: absolute;
+  top: 60px; /* Align under header */
+  left: 0;
+  right: 0; /* Full width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  z-index: 100; /* Appear above content */
+  opacity: 0; /* Start as invisible */
+  transform: translateY(-10px); /* Slightly offset for the transition */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  pointer-events: none; /* Disable interactions when hidden */
+}
+
+.nav-mobile.show {
+  display: flex; /* Show when toggled */
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset offset */
+  pointer-events: auto; /* Enable interactions */
+}
+
+.nav-mobile a {
+  padding: 15px 20px; /* Space around links */
+  text-decoration: none;
+  color: #343a40; /* Dark gray for links */
+  border-bottom: 1px solid #e0e0e0; /* Light gray separator */
+}
+
+.nav-mobile a:hover {
+  background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none; /* Hide desktop menu on mobile */
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .nav-mobile {
+    display: flex; /* Flex container */
+  }
+}

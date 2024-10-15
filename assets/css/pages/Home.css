@@ -1,0 +1,110 @@
+.bkg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--mail-primary4);
+}
+
+.home-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.appsy-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 5rem;
+
+  font-family: Google-Sans;
+  letter-spacing: 0.2rem;
+}
+
+.appsy-logo {
+  margin: auto;
+  height: 400px;
+  width: 400px;
+}
+
+.appsy-logo:hover {
+  transform: translateY(-6px);
+  cursor: pointer;
+}
+
+.apps-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-block-end: 5rem;
+  border-bottom: 4px solid var(--note-primary2);
+}
+
+.keep-logo-home {
+  width: 140px;
+  height: 180px;
+}
+
+.mail-logo-home {
+  width: 200px;
+  height: 180px;
+}
+
+.book-logo-home {
+  width: 180px;
+  height: 180px;
+}
+
+/* Apps Borders  */
+
+.to-note-app,
+.to-mail-app,
+.to-book-app {
+  border-radius: 1rem;
+  transition: transform 0.4s ease;
+  flex: 1 1 300px;
+  margin: 1rem;
+  padding: 5rem;
+}
+
+.to-note-app img,
+.to-mail-app img,
+.to-book-app img {
+  margin: auto;
+}
+
+.to-note-app:hover,
+.to-mail-app:hover,
+.to-book-app:hover {
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.note-title-box,
+.mail-title-box,
+.book-title-box {
+  padding: 1rem;
+  text-align: center;
+}
+/* Footer  */
+
+.home-footer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.footer-container {
+  display: flex;
+  background-color: var(--note-primary2);
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+/* note preview css */
+
+.notes-preview {
+  display: flex;
+  justify-content: start;
+  height: 100%;
+
+  border: 2px solid var(--note-primary2);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.3em;
+}

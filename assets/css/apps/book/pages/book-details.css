@@ -1,0 +1,39 @@
+.book-details {
+  background-color: var(--clr1bg);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-details table {
+  width: 100%;
+}
+
+.book-details button {
+  background-color: var(--clr1);
+  color: white;
+}
+
+.book-details button:hover {
+  background-color: var(--clr2);
+}
+
+.book-details .price-high {
+  color: red;
+}
+
+.book-details .price-low {
+  color: green;
+}
+
+.book-details .on-sale {
+  font-weight: bold;
+  color: orange;
+  margin-left: 10px;
+}
+
+.book-details img {
+  height: 100px;
+  width: 60px;
+}

@@ -1,0 +1,28 @@
+.book-filter {
+  background-color: var(--gray1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.book-filter[open] {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-filter-summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-filter-summary::marker {
+  font-size: 1.5rem;
+}
+
+.book-filter-summary:hover {
+  color: var(--clr1);
+}
+
+form {
+  margin-top: 1rem;
+}
